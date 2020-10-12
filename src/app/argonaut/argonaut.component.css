@@ -1,0 +1,27 @@
+:host {
+	padding: 10px 10px 10px 15px;
+}
+
+#name {
+	display: inline-block;
+}
+
+#button-delete {
+	display: inline-block;
+	
+	margin-left: 0.5em;
+
+	opacity: 0;
+
+	transition: opacity;
+  transition-duration: 0.40s;
+  transition-timing-function: ease;
+}
+
+#button-delete:hover {
+	color: var(--coral-color);
+}
+
+:host:hover #button-delete {
+	opacity: 1;
+}
