@@ -1,0 +1,110 @@
+:host {
+  --coral-color: #f76c6c;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto';
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  background: #f4f4f4;
+  text-align: center;
+  padding: 2em;
+}
+
+header img {
+  max-width: 96px;
+}
+
+header h1 {
+  font-size: 2.5em;
+}
+
+footer {
+  background: 
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+#new-member-form {
+  margin: 2em 0 4em 0;
+  text-align: center;
+}
+
+#order-by-options {
+  margin: 2em 0 4em 0;
+  text-align: center;
+}
+
+.column {
+  display: inline-block;
+}
+
+.column:not(:first-child) {
+  margin-left: 10px;
+}
+
+#member-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.member-item {
+  text-align: center;
+  padding: 0.25em 0;
+  width: 100%;
+}
+
+#message-modal {
+  position: absolute;
+
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  margin: 0 auto;
+
+  z-index: 1000;
+
+  background-color: rgba(10,10,10,0.1);
+}
+
+#modal-content {
+  max-width: 30%;
+  padding: 3%;
+  margin: 0 auto;
+  
+  border: solid 3px var(--coral-color);
+  border-radius: 5px;
+
+  background-color: white;
+}
+
+#modal-message {
+  text-align: center;
+}
+
+.blurred {
+  filter: blur(4px);
+}
+
+footer {
+  margin-top: 2em;
+  text-align: center;
+  color: #fff;
+  background: #f76c6c;
+  padding: 0.25em 0;
+}
