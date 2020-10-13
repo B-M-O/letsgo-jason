@@ -50,14 +50,14 @@ export class AppComponent {
 
   onSubmitArgonaut(): void {
   	let name: string = this.nameInputRef.nativeElement.value;
-  	let age: number = this.ageInputRef.nativeElement.value;
+  	let age: string = this.ageInputRef.nativeElement.value;
   	let role: string = this.roleSelectRef.nativeElement.value;
   	
   	let errorStr: string = "";
 
   	if (name == null || name == undefined || name === "")
   		errorStr += "\nRenseigne le nom de l'Argonaute";
-  	if (age == null || name == undefined)
+  	if (age == null || age == undefined || age === "")
   		errorStr += "\nRenseigne l'âge de l'Argonaute";
   	if (role == null || name == undefined || role === "")
   		errorStr += "\nRenseigne le rôle de l'Argonaute";
@@ -69,7 +69,7 @@ export class AppComponent {
   		return;
   	}
 
-  	let argonaut: Argonaut = {name:name, age:age, role:role};
+  	let argonaut: Argonaut = {name:name, age:parseInt(age), role:role};
 
   	this.dbService.createArgonaut(argonaut)
   		.then(res => {
